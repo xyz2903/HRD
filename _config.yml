@@ -6,11 +6,11 @@ lang: zh-CN
 
 timezone: Asia/Shanghai
 
-title: "人力资源管理数字化"
+title: "HR管理数字化"
 
 tagline: "为人力资源管理赋能"
 
-description: "为人力资源管理赋能"
+description: "聚焦人力资源数字化、HRM系统、组织行为、人力资源技术实践分享"
 
 url: "https://chro.eu.cc"
 
@@ -23,13 +23,13 @@ twitter:
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
-  name: your_full_name
-  email: example@domain.com # change to your email address
+  name: 人力资源管理数字化
+  email: hrd@hrm.us.kg # change to your email address
   fediverse_handle: # fill in your fediverse handle. E.g. "@username@domain.com"
   links:
     # The first element serves as the copyright owner's link
-    - https://twitter.com/username # change to your Twitter homepage
-    - https://github.com/username # change to your GitHub homepage
+    # - https://twitter.com/username # change to your Twitter homepage
+    # - https://github.com/username # change to your GitHub homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
     # - https://www.linkedin.com/in/username
