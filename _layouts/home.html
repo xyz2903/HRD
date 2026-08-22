@@ -1,1 +1,31 @@
+{% assign posts = paginator.posts %}
+
+<div class="post-content">
+<h2>📌 欢迎来到人力资源管理数字化</h2>
+<p>本博客聚焦人力资源数字化实践、HRM系统选型、组织行为学、人力资源数字化转型案例，面向HR从业者、商学院教学与企业实践。</p>
+<blockquote>理论结合落地，不做纯概念堆砌。</blockquote>
+
+<h3>📖 内容方向</h3>
+<ul>
+<li><strong>人力资源数字化转型</strong>：从流程梳理到系统落地的完整路径</li>
+<li><strong>HRM系统评测</strong>：主流人力资源管理系统横向对比与选型建议</li>
+<li><strong>组织与人才</strong>：组织行为、人才盘点、绩效管理实践</li>
+<li><strong>企业案例</strong>：真实企业数字化转型拆解与复盘</li>
+</ul>
+<hr>
+</div>
+
+{% if posts.size > 0 %}
+  <h3>🚀 最新文章</h3>
+  <ul class="post-list pl-0">
+    {% for post in posts %}
+      <li class="py-2">
+        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        <span class="text-muted">｜{{ post.date | date:"%Y‑%m‑%d" }}</span>
+      </li>
+    {% endfor %}
+  </ul>
+{% endif %}
+
+{% include pagination.html %}
 
