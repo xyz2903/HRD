@@ -1,4 +1,6 @@
-{% assign posts = paginator.posts %}
+---
+layout: default
+---
 
 <div class="post-content">
 <h2>📌 欢迎来到人力资源管理数字化</h2>
@@ -12,20 +14,21 @@
 <li><strong>组织与人才</strong>：组织行为、人才盘点、绩效管理实践</li>
 <li><strong>企业案例</strong>：真实企业数字化转型拆解与复盘</li>
 </ul>
-<hr>
 </div>
 
-{% if posts.size > 0 %}
-  <h3>🚀 最新文章</h3>
-  <ul class="post-list pl-0">
-    {% for post in posts %}
-      <li class="py-2">
-        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-        <span class="text-muted">｜{{ post.date | date:"%Y‑%m‑%d" }}</span>
-      </li>
-    {% endfor %}
-  </ul>
+<hr>
+
+<h3>🚀 最新文章</h3>
+
+{% if site.posts.size > 0 %}
+<ul class="post-list pl-0">
+  {% for post in site.posts %}
+  <li class="py-2">
+    <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+    <span class="text-muted">｜{{ post.date | date:"%Y-%m-%d" }}</span>
+  </li>
+  {% endfor %}
+</ul>
+{% else %}
+<p>暂无文章，去 _posts 文件夹新建第一篇吧。</p>
 {% endif %}
-
-{% include pagination.html %}
-
