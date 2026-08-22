@@ -1,8 +1,28 @@
 ---
-# the default layout is 'page'
 icon: fas fa-info-circle
 order: 4
 ---
 
-> Add Markdown syntax content to file `_tabs/about.md`{: .filepath } and it will show up on this page.
-{: .prompt-tip }
+# 关于本站
+
+本站聚焦**人力资源管理数字化**实践，面向HR从业者、商学院教学与企业实践，分享人力资源数字化转型、HRM系统选型、组织行为学、人才管理等内容。
+
+> 理论结合落地，不做纯概念堆砌。
+
+## 📖 内容方向
+
+- **人力资源数字化转型**：从流程梳理到系统落地的完整路径
+- **HRM系统评测**：主流人力资源管理系统横向对比与选型建议
+- **组织与人才**：组织行为、人才盘点、绩效管理实践
+- **企业案例**：真实企业数字化转型拆解与复盘
+
+## 👤 关于作者
+
+人力资源管理从业者，关注组织数字化转型与人才发展。
+
+## 📬 联系方式
+
+- 邮箱：hrd@hrm.us.kg
+- GitHub：https://github.com/xyz2903
+
+> 本站文章欢迎转载，转载请注明出处。
