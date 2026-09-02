@@ -1,16 +1,23 @@
 {% assign posts = include.posts | default: site.posts %}
-{% assign show_limit = include.limit | default: 10 %}
+{% assign show_limit = include.limit | default: 8 %}
 <ul class="post-list pl-0">
 {% for post in posts limit: show_limit %}
   <li class="py-2">
     <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-    <span class="post-meta"> | {{ post.date | date: "%Y-%m-%d" }}</span>
-    {%-if post.description %}
-    <div class="post-excerpt mt-1 mb-2 text-muted small">
+    <span class="post-meta"> | {{ post.date | date: "%Y‑%m‑%d" }}</span>
+    {%‑if post.description %}
+    <div class="post‑excerpt mt‑1 mb‑2 text‑muted small">
       {{ post.description }}
     </div>
-    {%-endif %}
+    {%‑endif %}
   </li>
 {% endfor %}
 </ul>
+
+{% if posts.size > show_limit %}
+<div class="mt‑3">
+  <a href="/archives/" class="btn btn‑outline‑primary">点击更多查看全部文章</a>
+</div>
+{% endif %}
+
 
