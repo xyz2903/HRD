@@ -5,7 +5,7 @@ title: HR管理数字化
 
 {% assign posts = site.posts %}
 <ul class="post-list pl-0">
-{% for post in posts limit:8 %}
+{% for post in posts limit: 8 %}
   <li class="py-2">
     <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
     <span class="post-meta"> | {{ post.date | date: "%Y-%m-%d" }}</span>
@@ -23,3 +23,4 @@ title: HR管理数字化
 <a href="/archives/" class="btn btn-outline-primary">点击更多查看全部文章</a>
 </div>
 {% endif %}
+
