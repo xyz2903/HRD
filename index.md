@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: home
 title: HR管理数字化
 ---
 
