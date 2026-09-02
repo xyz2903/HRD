@@ -20,6 +20,6 @@ title: HR管理数字化
 
 {% if posts.size > 8 %}
 <div class="mt-3">
-<a href="/tags/" class="btn btn-outline-primary">点击更多查看全部文章</a>
+<a href="/archives/" class="btn btn-outline-primary">点击更多查看全部文章</a>
 </div>
 {% endif %}
